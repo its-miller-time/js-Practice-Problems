@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        // //Hello 
+        // function hello(name) {
+        //     console.log("Hello, " + name)
+        // }
+        // hello('Ian')
+
+        // //Hello pt2
+        // function hello(name="World") {
+        //     console.log("Hello, " + name)
+        // }
+        // hello()
+
+        // //Madlib
+        // function madlib(name,subject){
+        //     return(`${name}'s favorite subject in school is ${subject}.`)
+        // }
+        // console.log(madlib("Ian","CS"))
+
+        // //Tip Calculator 
+        // function tipAmount(bill,service) {
+        //     if (service === 'good'){
+        //         return(bill * .2)
+        //     } else {
+        //         if (service === 'fair') {
+        //             return(bill * .15)
+        //         } else {
+        //             if (service === 'bad') {
+        //                 return(bill * .1)
+        //             }
+        //         }
+        //     }
+        // }
+
+        // console.log(tipAmount(100,'good'))
+
+        // //Tip Calculator 2
+        // function totalAmount(bill,service){
+        //     if (service === 'good'){
+        //         return(bill + (bill * .2))
+        //     } else {
+        //         if (service === 'fair') {
+        //             return(bill + (bill * .15))
+        //         } else {
+        //             if (service === 'bad') {
+        //                 return(bill + (bill * .1))
+        //             }
+        //         }
+        //     }
+        // }
+    
+        // console.log(totalAmount(100,'good'))
+
+        //Tip Calculator 3
+        function splitAmount(bill,service,num_ppl){
+            if (service === 'good'){
+                return((bill + (bill * .2))/num_ppl)
+            } else {
+                if (service === 'fair') {
+                    return((bill + (bill * .15))/num_ppl)
+                } else {
+                    if (service === 'bad') {
+                        return((bill + (bill * .1))/num_ppl)
+                    }
+                }
+            }
+        }
+
+        console.log(splitAmount(100,'good',4))
+    </script>
+</body>
+</html>
+
