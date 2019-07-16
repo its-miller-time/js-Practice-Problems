@@ -28,54 +28,103 @@
 
         // //Tip Calculator 
         // function tipAmount(bill,service) {
-        //     if (service === 'good'){
-        //         return(bill * .2)
-        //     } else {
-        //         if (service === 'fair') {
-        //             return(bill * .15)
-        //         } else {
-        //             if (service === 'bad') {
-        //                 return(bill * .1)
-        //             }
-        //         }
+        //    switch(service) { 
+        //     case 'good':
+        //         return(bill * .2);
+        //         break
+
+        //     case 'fair':
+        //         return(bill * .15);
+        //         break
+        //     case 'bad':
+        //         return(bill * .1);
+        //         break
         //     }
         // }
 
-        // console.log(tipAmount(100,'good'))
+        //console.log(tipAmount(200,'good'))
 
         // //Tip Calculator 2
         // function totalAmount(bill,service){
         //     if (service === 'good'){
         //         return(bill + (bill * .2))
-        //     } else {
-        //         if (service === 'fair') {
-        //             return(bill + (bill * .15))
-        //         } else {
-        //             if (service === 'bad') {
-        //                 return(bill + (bill * .1))
-        //             }
-        //         }
+        //     } 
+        //     if (service === 'fair') {
+        //         return(bill + (bill * .15))
         //     }
-        // }
+        //     if (service === 'bad') {
+        //         return(bill + (bill * .1))
+        //     }
+        //         }
     
         // console.log(totalAmount(100,'good'))
 
         //Tip Calculator 3
-        function splitAmount(bill,service,num_ppl){
-            if (service === 'good'){
-                return((bill + (bill * .2))/num_ppl)
-            } else {
-                if (service === 'fair') {
-                    return((bill + (bill * .15))/num_ppl)
-                } else {
-                    if (service === 'bad') {
-                        return((bill + (bill * .1))/num_ppl)
-                    }
-                }
-            }
+        // function splitAmount(bill,service,num_ppl){
+        //     if (service === 'good'){
+        //         return((bill + (bill * .2))/num_ppl)
+        //     } 
+        //     if (service === 'fair') {
+        //         return((bill + (bill * .15))/num_ppl)
+        //     }
+        //     if (service === 'bad') {
+        //         return((bill + (bill * .1))/num_ppl)
+        //     }
+        //         }
+        
+        // //Tip Calculator 3
+        // function splitAmount(bill,service,num_ppl){
+        //     const tip = (service === 'good')
+        //         ? .2
+        //         : (service === 'fair')
+        //             ? .15
+        //             : (service === 'bad')
+        //                 ? .1
+        //                 :0;
+        //     return((bill + (bill*tip))/num_ppl)
+        // }
+
+        // console.log(splitAmount(100,'good',4))
+
+        
+        // //PrintNumbersFunc
+        // function printNumbers(start,end){
+        //     for(let count = 1; count <= 10; count ++){
+        //         console.log(count)
+        //     }
+        // }
+        // printNumbers(1,10)
+
+        // function printSquare(size){
+        //     let str = ''
+        //     for(let count = 1; count <= size; count ++){
+        //         str += '*'
+        //     }
+        //     for (let linecnt = 0; linecnt <= str.length; linecnt ++){
+        //         console.log(str)
+        //     }
+        // }
+
+
+        //Posative Numbers
+        function posNums(numArray){
+            return numArray.filter(function(value){
+                return value > 0;
+            });
         }
 
-        console.log(splitAmount(100,'good',4))
+        numArray = [1,2,3,4,5,6,7,8,9,10]
+        console.log(posNums(numArray))
+
+
+        //Even Numbers 
+        function evenNums(numArray){
+            return numArray.filter(function(value){
+                return value % 2 === 0
+            })
+        }
+        console.log(evenNums(numArray))
+
     </script>
 </body>
 </html>
